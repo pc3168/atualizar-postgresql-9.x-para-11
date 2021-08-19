@@ -84,6 +84,13 @@ Ver Cluster Port Status Owner    Data directory               Log file
 11  main    5432 online postgres /var/lib/postgresql/11/main  /var/log/postgresql/postgresql-11-main
 ```
 
+Verifique se o cluster atualizado funciona e, em seguida, remova o cluster 9.4 .
+
+```
+pg_dropcluster 9.4 main
+```
+
+
 Agora, podemos remover totalmente a versão 9.4 do servidor:
 
 ```bash
